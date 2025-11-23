@@ -46,6 +46,29 @@
   border-radius: 0.75rem;
 }
 
+.brand-profile-image.enlarged {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  z-index: 1000;
+  cursor: pointer;
+  border-radius: 0.75rem;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  cursor: pointer;
+}
+
 .brand-info {
   display: flex;
   flex-direction: column;
