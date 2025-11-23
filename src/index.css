@@ -18,51 +18,52 @@
 }
 
 @layer base {
-  * {
+  .base-reset,
+  .base-reset * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
 
-  body {
+  .app-body {
     font-family: var(--font-sans);
     color: var(--color-dark);
     background: #ffffff;
     line-height: 1.6;
   }
 
-  h1 {
+  .heading-1 {
     letter-spacing: -.02em;
     font-size: 3.5rem;
     font-weight: 800;
     line-height: 1.1;
   }
 
-  h2 {
+  .heading-2 {
     letter-spacing: -.01em;
     font-size: 2.5rem;
     font-weight: 700;
     line-height: 1.2;
   }
 
-  h3 {
+  .heading-3 {
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 1.3;
   }
 
-  h4 {
+  .heading-4 {
     font-size: 1.25rem;
     font-weight: 600;
     line-height: 1.4;
   }
 
-  p {
+  .text-base {
     font-size: 1.125rem;
     line-height: 1.7;
   }
 
-  a {
+  .link-base {
     color: inherit;
     text-decoration: none;
   }

@@ -1,5 +1,6 @@
 import { Home, User, Wrench, FolderOpen, GraduationCap, Mail } from 'lucide-react';
 import { TabType } from '../App';
+import '../styles/Header.css';
 
 interface HeaderProps {
   activeTab: TabType;
@@ -17,20 +18,20 @@ export function Header({ activeTab, setActiveTab }: HeaderProps) {
   ];
 
   return (
-    <header className="border-b border-[var(--color-border)] bg-white">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="flex items-center justify-between h-20">
-          <div className="flex items-center gap-3">
-            <div className="w-12 h-12 bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-accent)] rounded-xl flex items-center justify-center">
-              <span className="text-white font-mono">MC</span>
+    <header className="header">
+      <div className="header-container">
+        <div className="header-content">
+          <div className="header-brand">
+            <div className="brand-logo">
+              <span className="brand-initials">MC</span>
             </div>
-            <div>
-              <div className="font-mono text-[var(--color-dark)]">CAD Designer</div>
-              <div className="text-xs text-[var(--color-gray)]">Mechanical Engineer</div>
+            <div className="brand-info">
+              <div className="brand-title">CAD Designer</div>
+              <div className="brand-subtitle">Mechanical Engineer</div>
             </div>
           </div>
 
-          <nav className="flex items-center gap-2">
+          <nav className="nav-menu">
             {tabs.map((tab) => {
               const Icon = tab.icon;
               const isActive = activeTab === tab.id;
@@ -39,14 +40,12 @@ export function Header({ activeTab, setActiveTab }: HeaderProps) {
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
-                  className={`flex items-center gap-2 px-6 py-3 rounded-lg transition-all duration-200 ${
-                    isActive
-                      ? 'bg-[var(--color-primary)] text-white shadow-lg shadow-blue-500/30'
-                      : 'text-[var(--color-gray)] hover:bg-[var(--color-light-gray)] hover:text-[var(--color-dark)]'
+                  className={`nav-button ${
+                    isActive ? 'nav-button-active' : 'nav-button-inactive'
                   }`}
                 >
                   <Icon size={18} />
-                  <span className="hidden md:inline">{tab.label}</span>
+                  <span className="nav-label">{tab.label}</span>
                 </button>
               );
             })}

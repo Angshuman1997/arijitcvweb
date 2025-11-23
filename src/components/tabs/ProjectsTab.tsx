@@ -1,6 +1,7 @@
 import { ImageWithFallback } from '../ImageFallBack/ImageWithFallback';
 import { getIcon } from '../../utils/iconMap';
 import projectsData from '../../data/projects.json';
+import '../../styles/ProjectsTab.css';
 
 export function ProjectsTab() {
   const CalendarIcon = getIcon('Calendar');
@@ -8,70 +9,61 @@ export function ProjectsTab() {
   const ExternalLinkIcon = getIcon('ExternalLink');
 
   return (
-    <div className="h-full overflow-auto px-6 py-12">
-      <div className="max-w-6xl mx-auto">
-        <div className="mb-12">
-          <h2 className="text-[var(--color-dark)] mb-4">{projectsData.title}</h2>
-          <p className="text-[var(--color-gray)] max-w-3xl">
+    <div className="projects-container">
+      <div className="projects-content">
+        <div className="projects-header">
+          <h2 className="projects-title">{projectsData.title}</h2>
+          <p className="projects-description">
             {projectsData.description}
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-6">
+        <div className="projects-grid">
           {projectsData.projects.map((project, index) => (
-            <div
-              key={index}
-              className="bg-white border border-[var(--color-border)] rounded-2xl overflow-hidden hover:border-[var(--color-primary)] hover:shadow-xl transition-all duration-300 group"
-            >
-              <div className="relative overflow-hidden h-48">
+            <div key={index} className="project-card">
+              <div className="project-image">
                 <ImageWithFallback
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="project-thumbnail"
                 />
-                <div className="absolute top-3 left-3 px-3 py-1 bg-white/95 backdrop-blur-sm rounded-full text-xs text-[var(--color-primary)] border border-[var(--color-border)]">
+                <div className="project-category">
                   {project.category}
                 </div>
-                <div className="absolute top-3 right-3 px-3 py-1 bg-[var(--color-dark)]/90 backdrop-blur-sm rounded-full text-xs text-white flex items-center gap-1.5">
+                <div className="project-date">
                   <CalendarIcon size={12} />
                   {project.date}
                 </div>
               </div>
 
-              <div className="p-6 space-y-4">
-                <h3 className="text-[var(--color-dark)]">{project.title}</h3>
+              <div className="project-content">
+                <h3 className="project-title">{project.title}</h3>
                 
-                <p className="text-[var(--color-gray)] text-sm">{project.description}</p>
+                <p className="project-description">{project.description}</p>
 
-                <div>
-                  <div className="text-xs text-[var(--color-gray)] mb-2 flex items-center gap-1.5">
+                <div className="project-deliverables">
+                  <div className="deliverables-label">
                     <FileTextIcon size={12} />
                     Deliverables
                   </div>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="deliverables-list">
                     {project.deliverables.map((item, itemIndex) => (
-                      <span
-                        key={itemIndex}
-                        className="px-2.5 py-1 bg-[var(--color-light-gray)] text-[var(--color-gray)] rounded-md text-xs"
-                      >
+                      <span key={itemIndex} className="deliverable-tag">
                         {item}
                       </span>
                     ))}
                   </div>
                 </div>
 
-                <div className="flex flex-wrap gap-2 pt-2 border-t border-[var(--color-border)]">
+                <div className="project-tools">
                   {project.tools.map((tool, toolIndex) => (
-                    <span
-                      key={toolIndex}
-                      className="px-3 py-1 bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-accent)] text-white rounded-full text-xs"
-                    >
+                    <span key={toolIndex} className="tool-tag">
                       {tool}
                     </span>
                   ))}
                 </div>
 
-                <button className="flex items-center gap-2 text-[var(--color-primary)] hover:gap-3 transition-all duration-200 pt-2 text-sm">
+                <button className="project-details-btn">
                   <span>View Details</span>
                   <ExternalLinkIcon size={14} />
                 </button>

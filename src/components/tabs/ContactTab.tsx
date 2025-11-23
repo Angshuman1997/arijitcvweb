@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { getIcon, IconName } from '../../utils/iconMap';
 import contactData from '../../data/contact.json';
+import '../../styles/ContactTab.css';
 
 export function ContactTab() {
   const [formData, setFormData] = useState({
@@ -31,42 +32,36 @@ export function ContactTab() {
   const MessageSquareIcon = getIcon('MessageSquare');
 
   return (
-    <div className="h-full overflow-auto px-6 py-12">
-      <div className="max-w-6xl mx-auto">
-        <div className="mb-12 text-center">
-          <h2 className="text-[var(--color-dark)] mb-4">{contactData.title}</h2>
-          <p className="text-[var(--color-gray)] max-w-2xl mx-auto">
+    <div className="contact-container">
+      <div className="contact-content">
+        <div className="contact-header">
+          <h2 className="contact-title">{contactData.title}</h2>
+          <p className="contact-description">
             {contactData.description}
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-5 gap-6">
+        <div className="contact-main-grid">
           {/* Contact Info & Social */}
-          <div className="lg:col-span-2 space-y-6">
+          <div className="contact-sidebar">
             {/* Contact Cards */}
-            <div className="space-y-4">
+            <div className="contact-info-cards">
               {contactData.contactInfo.map((info, index) => {
                 const Icon = getIcon(info.icon as IconName);
                 return (
-                  <div
-                    key={index}
-                    className="bg-white border border-[var(--color-border)] rounded-2xl p-5 hover:border-[var(--color-primary)] transition-all duration-200"
-                  >
-                    <div className="flex items-center gap-4">
-                      <div className="w-12 h-12 bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-accent)] rounded-xl flex items-center justify-center flex-shrink-0">
-                        <Icon className="text-white" size={20} />
+                  <div key={index} className="contact-info-card">
+                    <div className="contact-info-content">
+                      <div className="contact-info-icon">
+                        <Icon size={20} />
                       </div>
-                      <div className="flex-1">
-                        <div className="text-xs text-[var(--color-gray)] mb-1">{info.label}</div>
+                      <div className="contact-info-details">
+                        <div className="contact-info-label">{info.label}</div>
                         {info.link ? (
-                          <a
-                            href={info.link}
-                            className="text-[var(--color-dark)] hover:text-[var(--color-primary)] transition-colors"
-                          >
+                          <a href={info.link} className="contact-info-link">
                             {info.value}
                           </a>
                         ) : (
-                          <div className="text-[var(--color-dark)]">{info.value}</div>
+                          <div className="contact-info-value">{info.value}</div>
                         )}
                       </div>
                     </div>
@@ -76,26 +71,22 @@ export function ContactTab() {
             </div>
 
             {/* Social Links */}
-            <div className="bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-accent)] rounded-2xl p-6 text-white">
-              <h4 className="mb-4 flex items-center gap-2">
+            <div className="social-connect">
+              <h4 className="social-connect-title">
                 <MessageSquareIcon size={20} />
                 Connect With Me
               </h4>
-              <div className="space-y-3">
+              <div className="social-links">
                 {contactData.socialLinks.map((social, index) => {
                   const Icon = getIcon(social.icon as IconName);
                   return (
-                    <a
-                      key={index}
-                      href={social.link}
-                      className="flex items-center gap-3 p-3 bg-white/10 backdrop-blur-sm rounded-xl hover:bg-white/20 transition-all duration-200"
-                    >
-                      <div className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center">
+                    <a key={index} href={social.link} className="social-link">
+                      <div className="social-icon">
                         <Icon size={18} />
                       </div>
-                      <div>
-                        <div className="text-sm opacity-90">{social.label}</div>
-                        <div className="text-xs opacity-75">{social.username}</div>
+                      <div className="social-info">
+                        <div className="social-label">{social.label}</div>
+                        <div className="social-username">{social.username}</div>
                       </div>
                     </a>
                   );
@@ -104,23 +95,23 @@ export function ContactTab() {
             </div>
 
             {/* Download CV */}
-            <button className="w-full bg-white border-2 border-[var(--color-primary)] text-[var(--color-primary)] rounded-2xl p-5 hover:bg-[var(--color-primary)] hover:text-white transition-all duration-200 flex items-center justify-center gap-3">
+            <button className="download-cv">
               <DownloadIcon size={20} />
-              <span>Download Resume / CV</span>
+              <span className="download-text">Download Resume / CV</span>
             </button>
           </div>
 
           {/* Contact Form */}
-          <div className="lg:col-span-3 bg-white border border-[var(--color-border)] rounded-2xl p-8">
-            <h3 className="text-[var(--color-dark)] mb-6 flex items-center gap-2">
+          <div className="contact-form">
+            <h3 className="form-title">
               <SendIcon size={24} />
               {contactData.form.title}
             </h3>
             
-            <form onSubmit={handleSubmit} className="space-y-5">
-              <div className="grid md:grid-cols-2 gap-5">
-                <div>
-                  <label htmlFor="name" className="block text-[var(--color-dark)] mb-2 text-sm">
+            <form onSubmit={handleSubmit} className="contact-form-fields">
+              <div className="form-row">
+                <div className="form-field">
+                  <label htmlFor="name" className="field-label">
                     {contactData.form.fields.name.label}
                   </label>
                   <input
@@ -130,13 +121,13 @@ export function ContactTab() {
                     value={formData.name}
                     onChange={handleChange}
                     required={contactData.form.fields.name.required}
-                    className="w-full px-4 py-3 border border-[var(--color-border)] rounded-xl focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] focus:border-transparent transition-all"
+                    className="field-input"
                     placeholder={contactData.form.fields.name.placeholder}
                   />
                 </div>
 
-                <div>
-                  <label htmlFor="email" className="block text-[var(--color-dark)] mb-2 text-sm">
+                <div className="form-field">
+                  <label htmlFor="email" className="field-label">
                     {contactData.form.fields.email.label}
                   </label>
                   <input
@@ -146,14 +137,14 @@ export function ContactTab() {
                     value={formData.email}
                     onChange={handleChange}
                     required={contactData.form.fields.email.required}
-                    className="w-full px-4 py-3 border border-[var(--color-border)] rounded-xl focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] focus:border-transparent transition-all"
+                    className="field-input"
                     placeholder={contactData.form.fields.email.placeholder}
                   />
                 </div>
               </div>
 
-              <div>
-                <label htmlFor="subject" className="block text-[var(--color-dark)] mb-2 text-sm">
+              <div className="form-field">
+                <label htmlFor="subject" className="field-label">
                   {contactData.form.fields.subject.label}
                 </label>
                 <input
@@ -163,13 +154,13 @@ export function ContactTab() {
                   value={formData.subject}
                   onChange={handleChange}
                   required={contactData.form.fields.subject.required}
-                  className="w-full px-4 py-3 border border-[var(--color-border)] rounded-xl focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] focus:border-transparent transition-all"
+                  className="field-input"
                   placeholder={contactData.form.fields.subject.placeholder}
                 />
               </div>
 
-              <div>
-                <label htmlFor="message" className="block text-[var(--color-dark)] mb-2 text-sm">
+              <div className="form-field">
+                <label htmlFor="message" className="field-label">
                   {contactData.form.fields.message.label}
                 </label>
                 <textarea
@@ -179,7 +170,7 @@ export function ContactTab() {
                   onChange={handleChange}
                   required={contactData.form.fields.message.required}
                   rows={contactData.form.fields.message.rows}
-                  className="w-full px-4 py-3 border border-[var(--color-border)] rounded-xl focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] focus:border-transparent transition-all resize-none"
+                  className="field-textarea"
                   placeholder={contactData.form.fields.message.placeholder}
                 ></textarea>
               </div>
@@ -187,21 +178,19 @@ export function ContactTab() {
               <button
                 type="submit"
                 disabled={submitted}
-                className="w-full px-6 py-4 bg-[var(--color-primary)] text-white rounded-xl hover:bg-[var(--color-primary-dark)] transition-all duration-200 flex items-center justify-center gap-2 shadow-lg shadow-blue-500/30 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="submit-button"
               >
                 {submitted ? (
-                  <>
-                    <span>{contactData.form.submitButton.successText}</span>
-                  </>
+                  <span className="submit-success-text">{contactData.form.submitButton.successText}</span>
                 ) : (
                   <>
                     <SendIcon size={20} />
-                    <span>{contactData.form.submitButton.text}</span>
+                    <span className="submit-text">{contactData.form.submitButton.text}</span>
                   </>
                 )}
               </button>
 
-              <p className="text-xs text-[var(--color-gray)] text-center">
+              <p className="form-note">
                 {contactData.form.note}
               </p>
             </form>
@@ -209,12 +198,12 @@ export function ContactTab() {
         </div>
 
         {/* Additional Info */}
-        <div className="mt-8 grid md:grid-cols-3 gap-6">
+        <div className="additional-info">
           {contactData.additionalInfo.map((info, index) => (
-            <div key={index} className={`bg-gradient-to-br ${info.color} border ${info.borderColor} rounded-2xl p-6 text-center`}>
-              <div className="text-3xl mb-2">{info.emoji}</div>
-              <h4 className="text-[var(--color-dark)] mb-1">{info.title}</h4>
-              <p className="text-sm text-[var(--color-gray)]">{info.description}</p>
+            <div key={index} className={`info-card ${info.color} ${info.borderColor}`}>
+              <div className="info-emoji">{info.emoji}</div>
+              <h4 className="info-title">{info.title}</h4>
+              <p className="info-description">{info.description}</p>
             </div>
           ))}
         </div>

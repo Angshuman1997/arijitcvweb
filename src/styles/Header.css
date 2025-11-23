@@ -1,0 +1,98 @@
+/* Header Component Styles */
+
+.header {
+  border-bottom: 1px solid var(--color-border);
+  background: white;
+}
+
+.header-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5rem;
+}
+
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.brand-logo {
+  width: 3rem;
+  height: 3rem;
+  background: linear-gradient(to bottom right, var(--color-primary), var(--color-accent));
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-initials {
+  color: white;
+  font-family: var(--font-mono);
+}
+
+.brand-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-title {
+  font-family: var(--font-mono);
+  color: var(--color-dark);
+}
+
+.brand-subtitle {
+  font-size: 0.75rem;
+  color: var(--color-gray);
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+}
+
+.nav-button-active {
+  background: var(--color-primary);
+  color: white;
+  box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.3);
+}
+
+.nav-button-inactive {
+  color: var(--color-gray);
+}
+
+.nav-button-inactive:hover {
+  background: var(--color-light-gray);
+  color: var(--color-dark);
+}
+
+.nav-label {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .nav-label {
+    display: inline;
+  }
+}
