@@ -1,4 +1,4 @@
-import { Home, User, Wrench, FolderOpen, GraduationCap, Mail } from 'lucide-react';
+import { Home, User } from 'lucide-react';
 import { useState } from 'react';
 import { TabType } from '../App';
 import { ImageWithFallback } from './ImageFallBack/ImageWithFallback';
