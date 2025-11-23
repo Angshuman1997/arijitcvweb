@@ -1,0 +1,75 @@
+{
+  "title": "Education & Qualifications",
+  "description": "Strong academic foundation with specialized focus on CAD design, technical drafting, and manufacturing processes.",
+  "education": {
+    "degree": "Bachelor of Engineering in Mechanical Engineering",
+    "university": "University Name",
+    "location": "City, State",
+    "duration": "2020 - 2024",
+    "grade": "CGPA: 8.2/10",
+    "highlights": [
+      "Specialized in CAD/CAM and Design Engineering",
+      "Final Year Project: Design and Analysis of Industrial Robotic Arm",
+      "Member of Robotics and Automation Club",
+      "Participated in National Level Design Competitions"
+    ]
+  },
+  "internships": [
+    {
+      "company": "Manufacturing Company Name",
+      "role": "CAD Design Intern",
+      "duration": "Dec 2023 - Feb 2024",
+      "achievements": [
+        "Created 50+ technical drawings for production",
+        "Assisted in design validation and tolerance stack-up analysis",
+        "Collaborated with manufacturing team for DFM improvements"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "title": "AutoCAD Certified Professional",
+      "issuer": "Autodesk",
+      "date": "2024",
+      "credential": "ACU-2024-xxxxx"
+    },
+    {
+      "title": "SolidWorks Associate (CSWA)",
+      "issuer": "Dassault Systèmes",
+      "date": "2023",
+      "credential": "C-XXXXX-XXXX"
+    },
+    {
+      "title": "GD&T Fundamentals",
+      "issuer": "ASME",
+      "date": "2023",
+      "credential": "ASME-GDT-2023"
+    },
+    {
+      "title": "CATIA V5 Essentials",
+      "issuer": "Dassault Systèmes",
+      "date": "2023",
+      "credential": "CAT-V5-2023"
+    },
+    {
+      "title": "Fusion 360 for Manufacturing",
+      "issuer": "Autodesk",
+      "date": "2022",
+      "credential": "F360-MFG-2022"
+    }
+  ],
+  "coursework": [
+    "Engineering Graphics & CAD",
+    "Machine Design",
+    "Manufacturing Technology",
+    "Strength of Materials",
+    "Engineering Materials & Metallurgy",
+    "Metrology & Quality Control",
+    "Computer Aided Manufacturing",
+    "Product Design & Development",
+    "Finite Element Analysis",
+    "Industrial Engineering",
+    "Mechanical Vibrations",
+    "Fluid Mechanics & Hydraulics"
+  ]
+}

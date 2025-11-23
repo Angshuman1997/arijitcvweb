@@ -1,0 +1,50 @@
+{
+  "title": "About Me",
+  "description": [
+    "As a recent Mechanical Engineering graduate, I bring a strong foundation in CAD design and technical drafting. My academic journey and internship experiences have equipped me with hands-on expertise in creating detailed 2D drawings and sophisticated 3D models for various mechanical components and assemblies.",
+    "I'm proficient in industry-standard CAD software including AutoCAD, SolidWorks, and CATIA. My skill set extends to GD&T (Geometric Dimensioning and Tolerancing), sheet metal design, and assembly modeling. I'm committed to delivering accurate, manufacturable designs that meet engineering specifications and quality standards."
+  ],
+  "coreCompetencies": {
+    "title": "Core Competencies",
+    "items": [
+      "2D Technical Drawing & Detailing",
+      "3D Modeling & Surface Design",
+      "Assembly Design & BOM Creation",
+      "GD&T Application & Tolerance Analysis",
+      "Sheet Metal & Weldment Design",
+      "Engineering Documentation"
+    ]
+  },
+  "highlights": [
+    {
+      "icon": "Ruler",
+      "title": "Precision Focused",
+      "description": "Meticulous attention to detail in dimensions, tolerances, and specifications"
+    },
+    {
+      "icon": "Layers",
+      "title": "Multi-disciplinary",
+      "description": "Experience across mechanical, structural, and industrial design projects"
+    },
+    {
+      "icon": "Zap",
+      "title": "Fast Learner",
+      "description": "Quick adaptation to new software, tools, and industry standards"
+    },
+    {
+      "icon": "Target",
+      "title": "Goal-Oriented",
+      "description": "Focused on delivering accurate, manufacturable designs on time"
+    },
+    {
+      "icon": "Clock",
+      "title": "Time Management",
+      "description": "Efficient workflow management and meeting project deadlines"
+    },
+    {
+      "icon": "Users",
+      "title": "Team Player",
+      "description": "Strong collaboration skills with engineers and manufacturing teams"
+    }
+  ]
+}

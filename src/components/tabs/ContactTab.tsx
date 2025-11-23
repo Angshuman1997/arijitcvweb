@@ -1,5 +1,6 @@
-import { Mail, Phone, MapPin, Send, Linkedin, Github, Download, MessageSquare } from 'lucide-react';
 import { useState } from 'react';
+import { getIcon, IconName } from '../../utils/iconMap';
+import contactData from '../../data/contact.json';
 
 export function ContactTab() {
   const [formData, setFormData] = useState({
@@ -25,41 +26,17 @@ export function ContactTab() {
     });
   };
 
-  const contactInfo = [
-    {
-      icon: Mail,
-      label: 'Email',
-      value: 'caddesigner@email.com',
-      link: 'mailto:caddesigner@email.com',
-    },
-    {
-      icon: Phone,
-      label: 'Phone',
-      value: '+1 (555) 123-4567',
-      link: 'tel:+15551234567',
-    },
-    {
-      icon: MapPin,
-      label: 'Location',
-      value: 'City, State, Country',
-      link: null,
-    },
-  ];
-
-  const socialLinks = [
-    { icon: Linkedin, label: 'LinkedIn', link: '#', username: '/caddesigner' },
-    { icon: Github, label: 'GitHub', link: '#', username: '@caddesigner' },
-    { icon: MessageSquare, label: 'WhatsApp', link: '#', username: '+1 555 123 4567' },
-  ];
+  const SendIcon = getIcon('Send');
+  const DownloadIcon = getIcon('Download');
+  const MessageSquareIcon = getIcon('MessageSquare');
 
   return (
     <div className="h-full overflow-auto px-6 py-12">
       <div className="max-w-6xl mx-auto">
         <div className="mb-12 text-center">
-          <h2 className="text-[var(--color-dark)] mb-4">Get In Touch</h2>
+          <h2 className="text-[var(--color-dark)] mb-4">{contactData.title}</h2>
           <p className="text-[var(--color-gray)] max-w-2xl mx-auto">
-            I'm actively looking for CAD Designer/Draftsman positions. Feel free to reach out 
-            if you'd like to discuss opportunities or collaborate on projects.
+            {contactData.description}
           </p>
         </div>
 
@@ -68,8 +45,8 @@ export function ContactTab() {
           <div className="lg:col-span-2 space-y-6">
             {/* Contact Cards */}
             <div className="space-y-4">
-              {contactInfo.map((info, index) => {
-                const Icon = info.icon;
+              {contactData.contactInfo.map((info, index) => {
+                const Icon = getIcon(info.icon as IconName);
                 return (
                   <div
                     key={index}
@@ -101,12 +78,12 @@ export function ContactTab() {
             {/* Social Links */}
             <div className="bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-accent)] rounded-2xl p-6 text-white">
               <h4 className="mb-4 flex items-center gap-2">
-                <MessageSquare size={20} />
+                <MessageSquareIcon size={20} />
                 Connect With Me
               </h4>
               <div className="space-y-3">
-                {socialLinks.map((social, index) => {
-                  const Icon = social.icon;
+                {contactData.socialLinks.map((social, index) => {
+                  const Icon = getIcon(social.icon as IconName);
                   return (
                     <a
                       key={index}
@@ -128,7 +105,7 @@ export function ContactTab() {
 
             {/* Download CV */}
             <button className="w-full bg-white border-2 border-[var(--color-primary)] text-[var(--color-primary)] rounded-2xl p-5 hover:bg-[var(--color-primary)] hover:text-white transition-all duration-200 flex items-center justify-center gap-3">
-              <Download size={20} />
+              <DownloadIcon size={20} />
               <span>Download Resume / CV</span>
             </button>
           </div>
@@ -136,74 +113,74 @@ export function ContactTab() {
           {/* Contact Form */}
           <div className="lg:col-span-3 bg-white border border-[var(--color-border)] rounded-2xl p-8">
             <h3 className="text-[var(--color-dark)] mb-6 flex items-center gap-2">
-              <Send size={24} />
-              Send Me a Message
+              <SendIcon size={24} />
+              {contactData.form.title}
             </h3>
             
             <form onSubmit={handleSubmit} className="space-y-5">
               <div className="grid md:grid-cols-2 gap-5">
                 <div>
                   <label htmlFor="name" className="block text-[var(--color-dark)] mb-2 text-sm">
-                    Your Name *
+                    {contactData.form.fields.name.label}
                   </label>
                   <input
-                    type="text"
+                    type={contactData.form.fields.name.type}
                     id="name"
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    required
+                    required={contactData.form.fields.name.required}
                     className="w-full px-4 py-3 border border-[var(--color-border)] rounded-xl focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] focus:border-transparent transition-all"
-                    placeholder="John Doe"
+                    placeholder={contactData.form.fields.name.placeholder}
                   />
                 </div>
 
                 <div>
                   <label htmlFor="email" className="block text-[var(--color-dark)] mb-2 text-sm">
-                    Your Email *
+                    {contactData.form.fields.email.label}
                   </label>
                   <input
-                    type="email"
+                    type={contactData.form.fields.email.type}
                     id="email"
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    required
+                    required={contactData.form.fields.email.required}
                     className="w-full px-4 py-3 border border-[var(--color-border)] rounded-xl focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] focus:border-transparent transition-all"
-                    placeholder="john@example.com"
+                    placeholder={contactData.form.fields.email.placeholder}
                   />
                 </div>
               </div>
 
               <div>
                 <label htmlFor="subject" className="block text-[var(--color-dark)] mb-2 text-sm">
-                  Subject *
+                  {contactData.form.fields.subject.label}
                 </label>
                 <input
-                  type="text"
+                  type={contactData.form.fields.subject.type}
                   id="subject"
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}
-                  required
+                  required={contactData.form.fields.subject.required}
                   className="w-full px-4 py-3 border border-[var(--color-border)] rounded-xl focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] focus:border-transparent transition-all"
-                  placeholder="Job Opportunity / Collaboration"
+                  placeholder={contactData.form.fields.subject.placeholder}
                 />
               </div>
 
               <div>
                 <label htmlFor="message" className="block text-[var(--color-dark)] mb-2 text-sm">
-                  Message *
+                  {contactData.form.fields.message.label}
                 </label>
                 <textarea
                   id="message"
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  required
-                  rows={6}
+                  required={contactData.form.fields.message.required}
+                  rows={contactData.form.fields.message.rows}
                   className="w-full px-4 py-3 border border-[var(--color-border)] rounded-xl focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] focus:border-transparent transition-all resize-none"
-                  placeholder="Tell me about the opportunity or project..."
+                  placeholder={contactData.form.fields.message.placeholder}
                 ></textarea>
               </div>
 
@@ -214,18 +191,18 @@ export function ContactTab() {
               >
                 {submitted ? (
                   <>
-                    <span>Message Sent!</span>
+                    <span>{contactData.form.submitButton.successText}</span>
                   </>
                 ) : (
                   <>
-                    <Send size={20} />
-                    <span>Send Message</span>
+                    <SendIcon size={20} />
+                    <span>{contactData.form.submitButton.text}</span>
                   </>
                 )}
               </button>
 
               <p className="text-xs text-[var(--color-gray)] text-center">
-                I'll get back to you within 24-48 hours
+                {contactData.form.note}
               </p>
             </form>
           </div>
@@ -233,21 +210,13 @@ export function ContactTab() {
 
         {/* Additional Info */}
         <div className="mt-8 grid md:grid-cols-3 gap-6">
-          <div className="bg-gradient-to-br from-blue-50 to-cyan-50 border border-blue-200 rounded-2xl p-6 text-center">
-            <div className="text-3xl mb-2">⚡</div>
-            <h4 className="text-[var(--color-dark)] mb-1">Quick Response</h4>
-            <p className="text-sm text-[var(--color-gray)]">Usually within 24 hours</p>
-          </div>
-          <div className="bg-gradient-to-br from-purple-50 to-pink-50 border border-purple-200 rounded-2xl p-6 text-center">
-            <div className="text-3xl mb-2">🌍</div>
-            <h4 className="text-[var(--color-dark)] mb-1">Open to Relocate</h4>
-            <p className="text-sm text-[var(--color-gray)]">Available for opportunities nationwide</p>
-          </div>
-          <div className="bg-gradient-to-br from-orange-50 to-red-50 border border-orange-200 rounded-2xl p-6 text-center">
-            <div className="text-3xl mb-2">💼</div>
-            <h4 className="text-[var(--color-dark)] mb-1">Job Ready</h4>
-            <p className="text-sm text-[var(--color-gray)]">Can join immediately</p>
-          </div>
+          {contactData.additionalInfo.map((info, index) => (
+            <div key={index} className={`bg-gradient-to-br ${info.color} border ${info.borderColor} rounded-2xl p-6 text-center`}>
+              <div className="text-3xl mb-2">{info.emoji}</div>
+              <h4 className="text-[var(--color-dark)] mb-1">{info.title}</h4>
+              <p className="text-sm text-[var(--color-gray)]">{info.description}</p>
+            </div>
+          ))}
         </div>
       </div>
     </div>

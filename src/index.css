@@ -14,7 +14,7 @@
   --color-primary-dark: #1e40af;
   --color-dark: #0f172a;
   --color-gray: #64748b;
-  --color-light-gray: #f1f5f9;
+  --color-light-gray: #c8cfd6;
 }
 
 @layer base {
@@ -27,7 +27,7 @@
   body {
     font-family: var(--font-sans);
     color: var(--color-dark);
-    background: #fff;
+    background: #ffffff;
     line-height: 1.6;
   }
 
