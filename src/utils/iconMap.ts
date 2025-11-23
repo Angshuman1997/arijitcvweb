@@ -1,8 +1,8 @@
 // Icon mapping utility
 import {
-  Mail, Phone, MapPin, Send, Linkedin, Github, Download, MessageSquare,
+  Mail, Phone, MapPin, Send, Download, MessageSquare,
   Ruler, Layers, Zap, Target, Clock, Users, Calendar, ExternalLink, FileText,
-  GraduationCap, Award, BookOpen, ChevronRight
+  GraduationCap, Award, BookOpen, ChevronRight, UserCircle
 } from 'lucide-react';
 
 export const iconMap = {
@@ -10,8 +10,7 @@ export const iconMap = {
   Phone,
   MapPin,
   Send,
-  Linkedin,
-  Github,
+  Linkedin: UserCircle,
   Download,
   MessageSquare,
   Ruler,

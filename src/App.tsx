@@ -34,7 +34,7 @@ export default function App() {
   return (
     <div className="h-screen flex flex-col overflow-hidden bg-white">
       <Header activeTab={activeTab} setActiveTab={setActiveTab} />
-      <main className="flex-1 overflow-hidden">
+      <main className="flex-1 overflow-auto">
         {renderTabContent()}
       </main>
     </div>

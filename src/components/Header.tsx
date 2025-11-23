@@ -1,5 +1,6 @@
 import { Home, User, Wrench, FolderOpen, GraduationCap, Mail } from 'lucide-react';
 import { TabType } from '../App';
+import { ImageWithFallback } from './ImageFallBack/ImageWithFallback';
 import '../styles/Header.css';
 
 interface HeaderProps {
@@ -23,10 +24,14 @@ export function Header({ activeTab, setActiveTab }: HeaderProps) {
         <div className="header-content">
           <div className="header-brand">
             <div className="brand-logo">
-              <span className="brand-initials">MC</span>
+              <ImageWithFallback
+                src="/images/arijit_profile_image.png"
+                alt="Arijit Kumar Bardhan"
+                className="brand-profile-image"
+              />
             </div>
             <div className="brand-info">
-              <div className="brand-title">CAD Designer</div>
+              <div className="brand-title">ARIJIT KUMAR BARDHAN</div>
               <div className="brand-subtitle">Mechanical Engineer</div>
             </div>
           </div>

@@ -5,10 +5,9 @@
   },
   "title": {
     "line1": "Mechanical CAD",
-    "line2": "Designer & Draftsman",
-    "subtitle": "Fresh Graduate | 2024"
+    "line2": "Designer & Draftsman"
   },
-  "description": "Precision-driven CAD Designer specializing in technical drafting, 3D modeling, and engineering documentation. Proficient in AutoCAD, SolidWorks, and CATIA with a strong foundation in GD&T and manufacturing processes.",
+  "description": "BE (Mechanical) Engineer with 6 years of hands-on experience in Production & Manufacturing in globally reputed companies, now transitioning into Mechanical Design. Proficient in AutoCAD (2D & 3D), SolidWorks, GD&T, and Design for Manufacturing principles, with additional knowledge of CNC Turning operations. Highly motivated to contribute to innovative product and component design projects by combining practical manufacturing expertise with evolving design skills.",
   "buttons": {
     "primary": {
       "text": "Get in Touch",
@@ -22,18 +21,8 @@
   "socialLinks": [
     {
       "platform": "linkedin",
-      "url": "#",
+      "url": "https://www.linkedin.com/in/arijit-kr-bardhan-73b33a173",
       "icon": "Linkedin"
-    },
-    {
-      "platform": "github",
-      "url": "#",
-      "icon": "Github"
-    },
-    {
-      "platform": "email",
-      "url": "#",
-      "icon": "Mail"
     }
   ],
   "stats": [
