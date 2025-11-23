@@ -1,17 +1,33 @@
 {
   "title": "About Me",
   "description": [
-    "As a recent Mechanical Engineering graduate, I bring a strong foundation in CAD design and technical drafting. My academic journey and internship experiences have equipped me with hands-on expertise in creating detailed 2D drawings and sophisticated 3D models for various mechanical components and assemblies.",
-    "I'm proficient in industry-standard CAD software including AutoCAD, SolidWorks, and CATIA. My skill set extends to GD&T (Geometric Dimensioning and Tolerancing), sheet metal design, and assembly modeling. I'm committed to delivering accurate, manufacturable designs that meet engineering specifications and quality standards."
+    "I am a BE (Mechanical) Engineer with 6 years of experience in Production and Manufacturing across globally reputed organizations. My career so far has given me exposure to real-world industrial workflows, component development, machining operations, and quality-focused production environments. These years on the shop floor have shaped my ability to understand how products behave not only in CAD, but also in real-life manufacturing scenarios.",
+    "Currently, I am transitioning my career into Mechanical Design, driven by my passion for product development and innovation. I have developed strong proficiency in AutoCAD (2D & 3D), SolidWorks, GD&T, and Design for Manufacturing (DFM), which enables me to create designs that are not only functional but also practical, cost-effective, and production-ready. My exposure to CNC Turning operations further strengthens my ability to evaluate manufacturability and optimize designs for machining.",
+    "What motivates me most is the challenge of converting ideas into precise, manufacturable components — balancing creativity with engineering accuracy. I am eager to contribute to mechanical design projects where I can combine my production background with my growing expertise in CAD tools to bring value across the entire product lifecycle.",
+    "I believe in continuous learning, adapting to new technologies, and improving myself every day. With a strong problem-solving mindset and enthusiasm for design innovation, I look forward to collaborating on projects that make a meaningful impact in the field of mechanical engineering."
   ],
+  "personalInformation": {
+    "title": "Personal Information",
+    "items": [
+      "Date of Birth: 2nd January, 1994",
+      "Address: Permanent - 95/1, Serpentine Lane, (2nd Floor), Kolkata- 700014"
+    ]
+  },
+  "reference": {
+    "title": "Reference",
+    "items": [
+      "Mr. Dhiman Acharya",
+      "CADD Centre, New Alipore",
+      "56/C, Block D, New Alipore, Kolkata, West Bengal 700038",
+      "Mobile No.: 90513 22244"
+    ]
+  },
   "coreCompetencies": {
     "title": "Core Competencies",
     "items": [
       "2D Technical Drawing & Detailing",
       "3D Modeling & Surface Design",
-      "Assembly Design & BOM Creation",
       "GD&T Application & Tolerance Analysis",
-      "Sheet Metal & Weldment Design",
       "Engineering Documentation"
     ]
   },
