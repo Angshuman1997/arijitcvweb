@@ -24,6 +24,16 @@ export function DesignTab() {
               <div className="design-info">
                 <h3 className="design-title">{design.title}</h3>
                 <p className="design-description">{design.description}</p>
+                <div className="design-pdf">
+                  <a
+                    className="pdf-link"
+                    href={design.pdf}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View PDF
+                  </a>
+                </div>
               </div>
             </div>
           ))}

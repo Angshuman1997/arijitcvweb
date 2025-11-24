@@ -5,122 +5,74 @@
     {
       "title": "Design 1",
       "description": "Designed a complete gear assembly with detailed part drawings and BOM. Included tolerance analysis and manufacturing specifications for production.",
-      "image": "https://images.unsplash.com/photo-1747999918007-e3442cabb23a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxDQUQlMjBkZXNpZ24lMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzYzODc5NTY3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+      "image": "/assets/designs/pulley_support_model.png",
+      "pdf": "/assets/designs/pulley_support_model.pdf"
     },
     {
       "title": "Design 2",
       "description": "Created detailed 3D model and 2D fabrication drawings for a 50-ton hydraulic press frame with FEA analysis for structural integrity verification.",
-      "image": "https://images.unsplash.com/photo-1716698288651-b0b8698ea2f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWNobmljYWwlMjBkcmF3aW5nJTIwdG9vbHN8ZW58MXx8fHwxNzYzODc5NTY3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+      "image": "/assets/designs/pulley_support_model.png",
+      "pdf": "/assets/designs/pulley_support_model.pdf"
     },
     {
       "title": "Design 3",
       "description": "Developed complete conveyor system layout with detailed assembly drawings, component specifications, and motion analysis documentation.",
-      "image": "https://images.unsplash.com/photo-1727522974614-b592018e49e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWNoYW5pY2FsJTIwZW5naW5lZXJpbmclMjBibHVlcHJpbnR8ZW58MXx8fHwxNzYzNzg4MDIyfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+      "image": "/assets/designs/pulley_support_model.png",
+      "pdf": "/assets/designs/pulley_support_model.pdf"
     },
     {
       "title": "Design 4",
       "description": "Designed sheet metal enclosure with bend allowances, flat patterns, and complete manufacturing drawings ready for production.",
-      "image": "https://images.unsplash.com/photo-1747999918007-e3442cabb23a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxDQUQlMjBkZXNpZ24lMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzYzODc5NTY3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+      "image": "/assets/designs/pulley_support_model.png",
+      "pdf": "/assets/designs/pulley_support_model.pdf"
     },
     {
       "title": "Design 5",
       "description": "Designed sheet metal enclosure with bend allowances, flat patterns, and complete manufacturing drawings ready for production.",
-      "image": "https://images.unsplash.com/photo-1747999918007-e3442cabb23a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxDQUQlMjBkZXNpZ24lMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzYzODc5NTY3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+      "image": "/assets/designs/pulley_support_model.png",
+      "pdf": "/assets/designs/pulley_support_model.pdf"
     },
     {
       "title": "Design 6",
       "description": "Designed sheet metal enclosure with bend allowances, flat patterns, and complete manufacturing drawings ready for production.",
-      "image": "https://images.unsplash.com/photo-1747999918007-e3442cabb23a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxDQUQlMjBkZXNpZ24lMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzYzODc5NTY3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+      "image": "/assets/designs/pulley_support_model.png",
+      "pdf": "/assets/designs/pulley_support_model.pdf"
     },
     {
       "title": "Design 7",
       "description": "Designed sheet metal enclosure with bend allowances, flat patterns, and complete manufacturing drawings ready for production.",
-      "image": "https://images.unsplash.com/photo-1747999918007-e3442cabb23a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxDQUQlMjBkZXNpZ24lMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzYzODc5NTY3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+      "image": "/assets/designs/pulley_support_model.png",
+      "pdf": "/assets/designs/pulley_support_model.pdf"
     },
     {
       "title": "Design 8",
       "description": "Designed sheet metal enclosure with bend allowances, flat patterns, and complete manufacturing drawings ready for production.",
-      "image": "https://images.unsplash.com/photo-1747999918007-e3442cabb23a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxDQUQlMjBkZXNpZ24lMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzYzODc5NTY3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+      "image": "/assets/designs/pulley_support_model.png",
+      "pdf": "/assets/designs/pulley_support_model.pdf"
     },
     {
       "title": "Design 9",
       "description": "Designed sheet metal enclosure with bend allowances, flat patterns, and complete manufacturing drawings ready for production.",
-      "image": "https://images.unsplash.com/photo-1747999918007-e3442cabb23a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxDQUQlMjBkZXNpZ24lMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzYzODc5NTY3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+      "image": "/assets/designs/pulley_support_model.png",
+      "pdf": "/assets/designs/pulley_support_model.pdf"
     },
     {
       "title": "Design 10",
       "description": "Designed sheet metal enclosure with bend allowances, flat patterns, and complete manufacturing drawings ready for production.",
-      "image": "https://images.unsplash.com/photo-1747999918007-e3442cabb23a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxDQUQlMjBkZXNpZ24lMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzYzODc5NTY3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+      "image": "/assets/designs/pulley_support_model.png",
+      "pdf": "/assets/designs/pulley_support_model.pdf"
     },
     {
       "title": "Design 11",
       "description": "Designed sheet metal enclosure with bend allowances, flat patterns, and complete manufacturing drawings ready for production.",
-      "image": "https://images.unsplash.com/photo-1747999918007-e3442cabb23a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxDQUQlMjBkZXNpZ24lMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzYzODc5NTY3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+      "image": "/assets/designs/pulley_support_model.png",
+      "pdf": "/assets/designs/pulley_support_model.pdf"
     },
     {
       "title": "Design 12",
       "description": "Designed sheet metal enclosure with bend allowances, flat patterns, and complete manufacturing drawings ready for production.",
-      "image": "https://images.unsplash.com/photo-1747999918007-e3442cabb23a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxDQUQlMjBkZXNpZ24lMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzYzODc5NTY3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-    },
-    {
-      "title": "Design 13",
-      "description": "Designed sheet metal enclosure with bend allowances, flat patterns, and complete manufacturing drawings ready for production.",
-      "image": "https://images.unsplash.com/photo-1747999918007-e3442cabb23a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxDQUQlMjBkZXNpZ24lMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzYzODc5NTY3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-    },
-    {
-      "title": "Design 14",
-      "description": "Designed sheet metal enclosure with bend allowances, flat patterns, and complete manufacturing drawings ready for production.",
-      "image": "https://images.unsplash.com/photo-1747999918007-e3442cabb23a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxDQUQlMjBkZXNpZ24lMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzYzODc5NTY3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-    },
-    {
-      "title": "Design 15",
-      "description": "Designed sheet metal enclosure with bend allowances, flat patterns, and complete manufacturing drawings ready for production.",
-      "image": "https://images.unsplash.com/photo-1747999918007-e3442cabb23a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxDQUQlMjBkZXNpZ24lMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzYzODc5NTY3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-    },
-    {
-      "title": "Design 16",
-      "description": "Designed sheet metal enclosure with bend allowances, flat patterns, and complete manufacturing drawings ready for production.",
-      "image": "https://images.unsplash.com/photo-1747999918007-e3442cabb23a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxDQUQlMjBkZXNpZ24lMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzYzODc5NTY3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-    },
-    {
-      "title": "Design 17",
-      "description": "Designed sheet metal enclosure with bend allowances, flat patterns, and complete manufacturing drawings ready for production.",
-      "image": "https://images.unsplash.com/photo-1747999918007-e3442cabb23a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxDQUQlMjBkZXNpZ24lMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzYzODc5NTY3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-    },
-    {
-      "title": "Design 18",
-      "description": "Designed sheet metal enclosure with bend allowances, flat patterns, and complete manufacturing drawings ready for production.",
-      "image": "https://images.unsplash.com/photo-1747999918007-e3442cabb23a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxDQUQlMjBkZXNpZ24lMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzYzODc5NTY3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-    },
-    {
-      "title": "Design 19",
-      "description": "Designed sheet metal enclosure with bend allowances, flat patterns, and complete manufacturing drawings ready for production.",
-      "image": "https://images.unsplash.com/photo-1747999918007-e3442cabb23a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxDQUQlMjBkZXNpZ24lMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzYzODc5NTY3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-    },
-    {
-      "title": "Design 20",
-      "description": "Designed sheet metal enclosure with bend allowances, flat patterns, and complete manufacturing drawings ready for production.",
-      "image": "https://images.unsplash.com/photo-1747999918007-e3442cabb23a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxDQUQlMjBkZXNpZ24lMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzYzODc5NTY3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-    },
-    {
-      "title": "Design 21",
-      "description": "Designed sheet metal enclosure with bend allowances, flat patterns, and complete manufacturing drawings ready for production.",
-      "image": "https://images.unsplash.com/photo-1747999918007-e3442cabb23a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxDQUQlMjBkZXNpZ24lMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzYzODc5NTY3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-    },
-    {
-      "title": "Design 22",
-      "description": "Designed sheet metal enclosure with bend allowances, flat patterns, and complete manufacturing drawings ready for production.",
-      "image": "https://images.unsplash.com/photo-1747999918007-e3442cabb23a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxDQUQlMjBkZXNpZ24lMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzYzODc5NTY3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-    },
-    {
-      "title": "Design 23",
-      "description": "Designed sheet metal enclosure with bend allowances, flat patterns, and complete manufacturing drawings ready for production.",
-      "image": "https://images.unsplash.com/photo-1747999918007-e3442cabb23a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxDQUQlMjBkZXNpZ24lMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzYzODc5NTY3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-    },
-    {
-      "title": "Design 24",
-      "description": "Designed sheet metal enclosure with bend allowances, flat patterns, and complete manufacturing drawings ready for production.",
-      "image": "https://images.unsplash.com/photo-1747999918007-e3442cabb23a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxDQUQlMjBkZXNpZ24lMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzYzODc5NTY3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+      "image": "/assets/designs/pulley_support_model.png",
+      "pdf": "/assets/designs/pulley_support_model.pdf"
     }
   ]
 }
