@@ -22,8 +22,8 @@ export function HomeTab() {
         <div className="home-content-section">
           <div className="home-content">
             <div className="status-badge">
-              <div className={`bg-${homeData.status.badgeColor}`}></div>
-              <span>{homeData.status.indicator}</span>
+              <div className="status-badge-icon"></div>
+              <span className="status-badge-text">{homeData.status.indicator}</span>
             </div>
 
             <div className="hero-title-section">
@@ -35,6 +35,10 @@ export function HomeTab() {
               </h1>
             </div>
             <p className="hero-description">{homeData.description}</p>
+            <button className="secondary-button" onClick={handleDownloadResume}>
+            <SecondaryIcon size={20} />
+            {homeData.buttons.secondary.text}
+          </button>
           </div>
 
           <div className="hero-image-container">
@@ -48,10 +52,7 @@ export function HomeTab() {
           </div>
         </div>
         <div className="action-buttons">
-          <button className="secondary-button" onClick={handleDownloadResume}>
-            <SecondaryIcon size={20} />
-            {homeData.buttons.secondary.text}
-          </button>
+          
           <div className="social-links">
             {homeData.socialLinks.map((social, index) => {
               const SocialIcon = getIcon(social.icon as IconName);
@@ -61,6 +62,12 @@ export function HomeTab() {
                 </a>
               );
             })}
+              <div className="mobile-item">
+                +91 62918 65324
+              </div>
+              <div className="email-item">
+                <a href="mailto:arijitbardhan720@gmail.com">arijitbardhan720@gmail.com</a>
+              </div>
           </div>
         </div>
       </div>

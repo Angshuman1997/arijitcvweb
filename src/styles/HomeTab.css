@@ -51,7 +51,7 @@
 .home-content {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
   width: 100%;
 }
 
@@ -85,7 +85,7 @@
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
-  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  background: #0bc134;
 }
 
 .status-badge > span {
@@ -152,7 +152,7 @@
 }
 
 .secondary-button {
-  padding: 0.75rem 1.5rem;
+  padding: 0.5rem;
   border: 2px solid var(--color-primary);
   color: var(--color-primary);
   background: transparent;
@@ -162,6 +162,7 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  width: 10rem;
 }
 
 .secondary-button:hover {
@@ -179,27 +180,27 @@
 .social-link {
   width: 2.75rem;
   height: 2.75rem;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   background: var(--color-light-gray);
-  border: 1px solid var(--color-border);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-gray);
   text-decoration: none;
   transition: all 0.2s;
 }
 
 .social-link svg {
-  color: #3F51B5;
+  color: var(--color-primary);
   width: 20px;
   height: 20px;
 }
 
 .social-link:hover {
   background: var(--color-primary);
-  color: white;
-  border-color: var(--color-primary);
+
+  svg {
+    color: white;
+  }
 }
 
 .stats-grid {
@@ -310,4 +311,39 @@
   50% {
     opacity: 0.5;
   }
+}
+
+
+.mobile-item {
+  border-radius: 1rem;
+  background: var(--color-light-gray);
+  color: var(--color-primary);
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.mobile-item:hover {
+  background: var(--color-primary);
+  color: white;
+}
+
+.email-item {
+  border-radius: 1rem;
+  background: var(--color-light-gray);
+  color: var(--color-primary);
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.email-item:hover {
+  background: var(--color-primary);
+  color: white;
 }
