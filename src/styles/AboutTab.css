@@ -43,7 +43,7 @@
 
 .personal-info-title {
   color: var(--color-dark);
-  font-size: 1.25rem;
+  font-size: 1.75rem;
   font-weight: 600;
   margin-bottom: 1rem;
 }
@@ -70,7 +70,7 @@
 
 .reference-title {
   color: var(--color-dark);
-  font-size: 1.25rem;
+  font-size: 1.75rem;
   font-weight: 600;
   margin-bottom: 1rem;
 }
