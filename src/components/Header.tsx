@@ -16,7 +16,7 @@ export function Header({ activeTab, setActiveTab }: HeaderProps) {
     { id: 'home' as TabType, label: 'Home', icon: Home },
     { id: 'about' as TabType, label: 'About', icon: User },
     { id: 'expertise' as TabType, label: 'Expertise', icon: Wrench },
-    { id: 'projects' as TabType, label: 'Projects', icon: FolderOpen },
+    { id: 'designs' as TabType, label: 'Designs', icon: FolderOpen },
   ];
 
   return (

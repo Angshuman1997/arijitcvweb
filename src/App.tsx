@@ -3,9 +3,9 @@ import { Header } from './components/Header';
 import { HomeTab } from './components/tabs/HomeTab';
 import { AboutTab } from './components/tabs/AboutTab';
 import { ExpertiseTab } from './components/tabs/ExpertiseTab';
-import { ProjectsTab } from './components/tabs/ProjectsTab';
+import { DesignTab } from './components/tabs/DesignTab';
 
-export type TabType = 'home' | 'about' | 'expertise' | 'projects';
+export type TabType = 'home' | 'about' | 'expertise' | 'designs';
 export default function App() {
   const [activeTab, setActiveTab] = useState<TabType>('home');
 
@@ -17,8 +17,8 @@ export default function App() {
         return <AboutTab />;
       case 'expertise':
         return <ExpertiseTab />;
-      case 'projects':
-        return <ProjectsTab />;
+      case 'designs':
+        return <DesignTab />;
       default:
         return <HomeTab />;
     }

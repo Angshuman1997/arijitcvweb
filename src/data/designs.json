@@ -1,7 +1,7 @@
 {
-  "title": "Projects Portfolio",
+  "title": "Design Portfolio",
   "description": "A selection of design projects showcasing CAD modeling, technical drafting, and engineering documentation skills across various mechanical systems.",
-  "projects": [
+  "designs": [
     {
       "title": "Automated Gear Assembly",
       "description": "Designed a complete gear assembly with detailed part drawings and BOM. Included tolerance analysis and manufacturing specifications for production.",
