@@ -45,6 +45,42 @@ export function AboutTab() {
             );
           })}
         </div>
+        <div className="education-info">
+          <h3 className="education-title">Education</h3>
+          <div className="education-table-wrapper">
+            <table className="education-table">
+              <thead>
+                <tr>
+                  <th>Course</th>
+                  <th>School / College</th>
+                  <th>Board / University</th>
+                  <th>Year</th>
+                  
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Bachelor of Engineering (Mechanical)</td>
+                  <td>Acharya Institute of Technology, Bangalore</td>
+                  <td>VTU</td>
+                  <td>2017</td>
+                </tr>
+                <tr>
+                  <td>12th Standard</td>
+                  <td>St. Francis Xavier School, Salt Lake, Kolkata</td>
+                  <td>CISCE</td>
+                  <td>2012</td>
+                </tr>
+                <tr>
+                  <td>10th Standard</td>
+                  <td>Frank Anthony Public School, Kolkata</td>
+                  <td>CISCE</td>
+                  <td>2010</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
         <div className="extra-info">
           <div className="personal-info-section">
             <h3 className="personal-info-title">
