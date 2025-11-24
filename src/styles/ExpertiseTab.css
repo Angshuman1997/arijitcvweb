@@ -51,9 +51,11 @@
 }
 
 .skill-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5%;
+  padding: 1rem 0 2rem 0;
+  row-gap: 2rem;
 }
 
 .skill-item {
@@ -69,6 +71,8 @@
 
 .skill-name {
   color: var(--color-dark);
+  font-family: var(--font-mono);
+  font-size: 1rem;
 }
 
 .skill-percentage {
@@ -90,36 +94,9 @@
   transition: all 1s;
 }
 
-.from-blue-500 {
-  --tw-gradient-from: #3b82f6;
-}
-
-.to-purple-600 {
-  --tw-gradient-to: #9333ea;
-}
-
-.from-green-500 {
-  --tw-gradient-from: #10b981;
-}
-
-.to-teal-600 {
-  --tw-gradient-to: #0d9488;
-}
-
-.from-orange-500 {
-  --tw-gradient-from: #f97316;
-}
-
-.to-red-600 {
-  --tw-gradient-to: #dc2626;
-}
-
-.from-purple-500 {
-  --tw-gradient-from: #8b5cf6;
-}
-
-.to-pink-600 {
-  --tw-gradient-to: #db2777;
+/* Gradient combinations for skill progress bars */
+.skill-progress.from-blue-500.to-cyan-500 {
+  background: linear-gradient(90deg, #3b82f6 0%, #06b6d4 100%);
 }
 
 /* Professional Experience Section */
