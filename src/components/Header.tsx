@@ -1,4 +1,4 @@
-import { Home, User } from 'lucide-react';
+import { Home, User, Wrench } from 'lucide-react';
 import { useState } from 'react';
 import { TabType } from '../App';
 import { ImageWithFallback } from './ImageFallBack/ImageWithFallback';
@@ -15,10 +15,9 @@ export function Header({ activeTab, setActiveTab }: HeaderProps) {
   const tabs = [
     { id: 'home' as TabType, label: 'Home', icon: Home },
     { id: 'about' as TabType, label: 'About', icon: User },
-    // { id: 'skills' as TabType, label: 'Skills', icon: Wrench },
+    { id: 'expertise' as TabType, label: 'Expertise', icon: Wrench },
     // { id: 'projects' as TabType, label: 'Projects', icon: FolderOpen },
     // { id: 'education' as TabType, label: 'Education', icon: GraduationCap },
-    // { id: 'contact' as TabType, label: 'Contact', icon: Mail },
   ];
 
   return (

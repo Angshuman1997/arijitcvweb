@@ -2,13 +2,11 @@ import { useState } from 'react';
 import { Header } from './components/Header';
 import { HomeTab } from './components/tabs/HomeTab';
 import { AboutTab } from './components/tabs/AboutTab';
-import { SkillsTab } from './components/tabs/SkillsTab';
+import { ExpertiseTab } from './components/tabs/ExpertiseTab';
 import { ProjectsTab } from './components/tabs/ProjectsTab';
 import { EducationTab } from './components/tabs/EducationTab';
-import { ContactTab } from './components/tabs/ContactTab';
 
-export type TabType = 'home' | 'about' | 'skills' | 'projects' | 'education' | 'contact';
-
+export type TabType = 'home' | 'about' | 'expertise' | 'projects' | 'education';
 export default function App() {
   const [activeTab, setActiveTab] = useState<TabType>('home');
 
@@ -18,14 +16,12 @@ export default function App() {
         return <HomeTab />;
       case 'about':
         return <AboutTab />;
-      case 'skills':
-        return <SkillsTab />;
+      case 'expertise':
+        return <ExpertiseTab />;
       case 'projects':
         return <ProjectsTab />;
       case 'education':
         return <EducationTab />;
-      case 'contact':
-        return <ContactTab />;
       default:
         return <HomeTab />;
     }

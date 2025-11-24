@@ -1,0 +1,95 @@
+{
+  "title": "Expertise",
+  "description": "Comprehensive skill set and professional experience in production engineering, PVD coating, quality control, and CAD software developed through 6+ years of industry experience.",
+  "skillCategories": [
+    {
+      "title": "CAD Software",
+      "color": "from-blue-500 to-cyan-500",
+      "skills": [
+        { "name": "AutoCAD 2D", "level": 90 },
+        { "name": "SolidWorks", "level": 85 },
+        { "name": "CATIA", "level": 80 },
+        { "name": "NX CAD", "level": 75 },
+        { "name": "3D Modeling", "level": 85 },
+        { "name": "Product Design", "level": 82 }
+      ]
+    }
+  ],
+  "professionalExperience": [
+    {
+      "company": "CERATIZIT India Pvt Ltd",
+      "location": "Attibele, Bangalore",
+      "period": "Feb 2023 - Jun 2025",
+      "position": "Asst. Engineer - PVD Coating Dept",
+      "type": "current",
+      "description": "A high-technology Engineering group specialized in cutting tools and hard material",
+      "responsibilities": [
+        "Worked closely with Design and Quality Departments to ensure component accuracy, coating uniformity, enhanced understanding of dimensional tolerances",
+        "Hands on preparation of substrate for coating process, Chamber Preparation, etc.",
+        "Machine Maintenance and documentation of Records related to process for ISO audit"
+      ]
+    },
+    {
+      "company": "NDT Systems Pvt Ltd",
+      "location": "Jamnagar, Gujarat",
+      "period": "Oct 2022 - Nov 2022",
+      "position": "R.T. Assistant",
+      "type": "previous",
+      "description": "Specialized Engineering services in the field of Industrial Testing and Inspection work (A Quality Non-destructive Testing House)",
+      "responsibilities": [
+        "Industrial Radiographic Testing and Interpretation"
+      ]
+    },
+    {
+      "company": "NMC Tools Pvt Ltd",
+      "location": "Falta, WB",
+      "period": "Feb 2022 - Jun 2022",
+      "position": "Production Engineer",
+      "type": "previous",
+      "description": "Manufacturer of High Performance Drills & Endmill",
+      "responsibilities": [
+        "Shop floor Administration, Time Study of Machine Setup Process, daily Production Monitoring, Follow-up and Analysis",
+        "Measurement Study on the Geometrical Anatomy of Drills and Endmills"
+      ]
+    },
+    {
+      "company": "Kyocera CTC Precision Tools Pvt Ltd",
+      "location": "Jamshedpur",
+      "period": "Jun 2018 - Feb 2022",
+      "position": "Engineer - Production (PVD Coating Dept)",
+      "type": "previous",
+      "description": "Manufacturer of Cutting Tool Inserts & subsidiary of Kyocera, Japan",
+      "responsibilities": [
+        "Planning and Organizing production schedules",
+        "Executing and achieving daily production target and SOP",
+        "Implementation of 5S, Kaizen, Poka-Yoke, Kanban, ISO Documentation"
+      ]
+    }
+  ],
+  "certifications": [
+    "Conversant in MS Office – MS Word, Excel, PowerPoint and Minitab",
+    "Diploma in Product design - AutoCAD 2D, SolidWorks, NX CAD, CATIA",
+    "FINISHING SCHOOL IN PRODUCTION ENGINEERING from Indian Machine Tool Manufacturers' Association, Bangalore (IMTMA)",
+    "Metal Cutting Technology – E-Diploma from Sandvik Coromant",
+    "Hydraulics & Pneumatics- MSME Tool Room, Kolkata"
+  ],
+  "internships": [
+    {
+      "company": "Kennametal India Pvt. Ltd",
+      "location": "Bangalore",
+      "project": "Dimensional Control in Negative Inserts",
+      "duration": "8 months",
+      "achievement": "Certificate awarded by Kennametal India Pvt. Ltd."
+    },
+    {
+      "company": "Tata Motors Ltd",
+      "location": "Jamshedpur",
+      "project": "Engine Testing",
+      "duration": "1 month"
+    },
+    {
+      "company": "Ace Micromatic",
+      "project": "Study on Blackening Process of Tool Turrets and Tool Discs"
+    }
+  ]
+}
