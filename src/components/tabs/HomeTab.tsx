@@ -53,13 +53,16 @@ export function HomeTab() {
         </div>
         <div className="action-buttons">
           
-          <div className="social-links">
+          <div className="contacts-section">
             {homeData.socialLinks.map((social, index) => {
               const SocialIcon = getIcon(social.icon as IconName);
               return (
-                <a key={index} href={social.url} className="social-link">
+                <div key={index} className="link-item">
+                  <a href={social.url} className="social-link">
                   <SocialIcon size={20} />
                 </a>
+                </div>
+                
               );
             })}
               <div className="mobile-item">
